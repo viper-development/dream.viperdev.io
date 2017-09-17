@@ -8,8 +8,10 @@ h1 {
     font-family: "Helvetica";
 }
 
-p {
-    font-size: 34pt;
+.headlink a {
+    font-size: 35pt;
+    text-decoration: none;
+    font-family: "Helvetica";
 }
 
 @font-face {
@@ -38,6 +40,7 @@ p {
 }
 
 body {
+    font-size: 34pt;
     font-family: "Helvetica Thin";
     color: #fff;
     background-attachment: fixed;
