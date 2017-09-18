@@ -1,10 +1,21 @@
+@font-face {
+    font-family: "Helvetica Thin";
+    src: url("HELVETICANEUE-THIN.OTF")
+}
+
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("HELVETICA.OTF");
+}
+
 a {
     color: #fff;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 35pt;
+    font-size: 25pt;
     font-family: "Helvetica";
 }
 
@@ -21,9 +32,9 @@ h1 {
 }
 
 .headlink a {
-    font-size: 35pt;
+    font-size: 25pt;
     text-decoration: none;
-    font-family: "Helvetica";
+    font-family: "Helvetica Thin";
     color: #ccc;
 }
 
@@ -31,23 +42,13 @@ h1 {
     color: #fff;
 }
 
-@font-face {
-    font-family: "Helvetica Thin";
-    src: url("HELVETICANEUE-THIN.OTF")
-}
-
-@font-face {
-    font-family: "Helvetica";
-    src: url("HELVETICA.OTF");
-}
-
 .hashtag {
     font-family: "Helvetica";
+    font-weight: 300;
 }
 
 .button {
     font-family: "Helvetica";
-    font-size: 35pt;
     color: #1E88E5;
     padding: 10px 20px;
     border: 0px;
@@ -57,15 +58,52 @@ h1 {
 }
 
 body {
-    font-size: 34pt;
+    height: 100vh;
+    background-image: url('header-bg.jpg');
+    width: 100%;
+    min-height:100%;
+    background-size: cover;
+    overflow: hidden;
+    font-size: 20pt;
     font-family: "Helvetica Thin";
     color: #fff;
-    background-attachment: fixed;
-    background-image: url('header-bg.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+}
+
+@media only screen and (min-width:0px) and (max-width:500px) {
+    body {
+        font-size: 15pt;
+        font-family: "Helvetica Thin";
+        color: #fff;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 13pt;
+        font-family: "Helvetica";
+    }
+    .center {
+        position: none;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        padding:3em;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:770px) {
+    body {
+        font-size: 15pt;
+        font-family: "Helvetica Thin";
+        color: #fff;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 15pt;
+        font-family: "Helvetica";
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+    }
 }
