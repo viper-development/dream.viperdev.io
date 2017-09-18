@@ -15,7 +15,7 @@ a {
 
 h1 {
     text-transform: uppercase;
-    font-size: 25pt;
+    font-size: 35pt;
     font-family: "Helvetica";
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 .headlink a {
-    font-size: 25pt;
+    font-size: 35pt;
     text-decoration: none;
     font-family: "Helvetica Thin";
     color: #ccc;
@@ -63,8 +63,9 @@ body {
     width: 100%;
     min-height:100%;
     background-size: cover;
+    background-position: center bottom;
     overflow: hidden;
-    font-size: 20pt;
+    font-size: 30pt;
     font-family: "Helvetica Thin";
     color: #fff;
 }
@@ -104,6 +105,13 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-40%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media only screen and (min-width:1100px) and (max-width:2200px) {
+    .center {
+        transform: translate(-30%, -50%);
     }
 }
